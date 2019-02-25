@@ -1,0 +1,11 @@
+# Only create this for K8s 1.9+
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: fast-disks
+  annotations:
+      storageclass.kubernetes.io/is-default-class: 'true'
+provisioner: kubernetes.io/no-provisioner
+volumeBindingMode: Immediate
+# Supported policies: Delete, Retain
+reclaimPolicy: Delete
