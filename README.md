@@ -107,6 +107,6 @@ The Vagrant VM can be accessed in two ways
 * `$ vagrant up`
 
 <a id="destroy"></a>
-## How to restart Vagrant VM's ?
+## How to destroy Vagrant VM's ?
 * `$ cd k8s-vagrant-centos/provisioning`
 * `$ vagrant destroy`
