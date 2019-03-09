@@ -43,13 +43,13 @@ VM:
   master:
     ip: 100.10.10.100
     cpus: 2
-    memory: 4096
+    memory: 2048
     vmname: kmaster
     hostname: kmaster.example.com
   worker1:
     ip: 100.10.10.101
-    cpus: 4
-    memory: 24576
+    cpus: 3
+    memory: 16384
     vmname: kworker1
     hostname: kworker1.example.com
 ```
@@ -63,7 +63,7 @@ By running the below command kubernetes cluster will be created with 2 Centos VM
 
 <a id="addons"></a>
 ## What are the addons provided ?
-[***helm***](https://helm.sh/docs/install/) / [***metrics-server***](https://github.com/helm/charts/tree/master/stable/metrics-server) / [***kubernetes-dashboard***](https://github.com/helm/charts/tree/master/stable/kubernetes-dashboard) / [***nfs-volume-provisioner***](https://github.com/helm/charts/tree/master/stable/nfs-client-provisioner) / [***local-volume-provisioner***](https://github.com/kubernetes-incubator/external-storage/tree/master/local-volume/provisioner/deployment/kubernetes/example)
+[***helm***](https://helm.sh/docs/install/) / [***metrics-server***](https://github.com/helm/charts/tree/master/stable/metrics-server) / [***kubernetes-dashboard***](https://github.com/helm/charts/tree/master/stable/kubernetes-dashboard) / [***nfs-volume-provisioner***](https://github.com/helm/charts/tree/master/stable/nfs-client-provisioner)
 
 <a id="configuration"></a>
 ## What are the VM's configured ?
@@ -71,8 +71,8 @@ By default below are the IP Addresses that will be configured for the VM's
 
 Name|IP|OS|RAM|CPU|
 |----|----|----|----|----|
-kmaster  |100.10.10.100|CentOS7|4 GB|2|
-kworker1 |100.10.10.101|CentOS7|24GB|4|
+kmaster  |100.10.10.100|CentOS7|2 GB|2|
+kworker1 |100.10.10.101|CentOS7|16GB|3|
 
 
 <a id="dashboard"></a>
