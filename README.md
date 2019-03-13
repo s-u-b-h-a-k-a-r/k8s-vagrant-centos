@@ -63,7 +63,7 @@ By running the below command kubernetes cluster will be created with 2 Centos VM
 
 <a id="addons"></a>
 ## What are the addons provided ?
-[***helm***](https://helm.sh/docs/install/) / [***metrics-server***](https://github.com/helm/charts/tree/master/stable/metrics-server) / [***kubernetes-dashboard***](https://github.com/helm/charts/tree/master/stable/kubernetes-dashboard) / [***nfs-volume-provisioner***](https://github.com/helm/charts/tree/master/stable/nfs-client-provisioner)
+[***helm***](https://helm.sh/docs/install/) /  [***kubernetes-dashboard***](https://github.com/helm/charts/tree/master/stable/kubernetes-dashboard) / [***nfs-volume-provisioner***](https://github.com/helm/charts/tree/master/stable/nfs-client-provisioner)
 
 <a id="configuration"></a>
 ## What are the VM's configured ?
