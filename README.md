@@ -8,7 +8,7 @@ This setup is used to create ***kubernetes*** cluster on  ***local laptop / desk
 
 # Table of Contents
 
-* [What are the pre-requisites ?](#pre-requisites)
+* [What are the prerequisites ?](#prerequisites)
 * [How to deploy kubernetes cluster ?](#deploy)
 * [What are the addons provided ?](#addons)
 * [What are the VM's configured ?](#configuration)
@@ -19,8 +19,8 @@ This setup is used to create ***kubernetes*** cluster on  ***local laptop / desk
 * [How to destroy Vagrant VM's ?](#destroy)
 
 
-<a id="pre-requisites"></a>
-# What are the pre-Requisites ?
+<a id="prerequisites"></a>
+# What are the prerequisites ?
 * [Git](https://git-scm.com/downloads "Git")
 * [Vagrant](https://www.vagrantup.com/downloads.html "Vagrant")
 * [Oracle Virtual Manger](https://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html "Oracle Virtual Manger")
