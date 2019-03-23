@@ -14,8 +14,8 @@ echo "[TASK 4] Generate Join Command To Cluster For Worker Nodes"
 kubeadm token create --print-join-command > /join_worker_node.sh
 su - vagrant -c "kubectl taint nodes --all node-role.kubernetes.io/master-"
 
-figlet FLANNEL
-su - vagrant -c "kubectl create -f /vagrant/flannel-network/kube-flannel.yaml"
+figlet WEAVENET
+su - vagrant -c "kubectl create -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')""
 
 figlet DASHBOARD
 su - vagrant -c "kubectl create -f /vagrant/kube-dashboard/kubernetes-dashboard.yaml"
