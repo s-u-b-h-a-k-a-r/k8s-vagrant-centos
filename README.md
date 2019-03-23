@@ -1,12 +1,12 @@
 # k8s-vagrant-centos
 ![enter image description here](https://lh3.googleusercontent.com/u-UVCZJHQiRnsgebzsHX6igGyEBSrwCCqwM9wSgchqnygIIJRtwkYFMaVmWVJdQ4kHKDWMLnQ0QkiQ)
 
-## About...
+# About...
 
 This setup is used to create ***kubernetes*** cluster on  ***local laptop / desktop*** using vagrant - with this we can create a ***two node cluster setup*** which contains ***one master*** and ***one worker node*** with one single command.
 
 
-## Table of Contents
+# Table of Contents
 
 * [What are the pre-requisites ?](#pre-requisites)
 * [How to deploy kubernetes cluster ?](#deploy)
@@ -20,7 +20,7 @@ This setup is used to create ***kubernetes*** cluster on  ***local laptop / desk
 
 
 <a id="pre-requisites"></a>
-## What are the pre-Requisites ?
+# What are the pre-Requisites ?
 * [Git](https://git-scm.com/downloads "Git")
 * [Vagrant](https://www.vagrantup.com/downloads.html "Vagrant")
 * [Oracle Virtual Manger](https://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html "Oracle Virtual Manger")
@@ -31,7 +31,7 @@ This setup is used to create ***kubernetes*** cluster on  ***local laptop / desk
 
 
 <a id="deploy"></a>
-## How to deploy kubernetes cluster ?
+# How to deploy kubernetes cluster ?
 * Open `bash` terminal 
 * Checkout the code  (git clone https://github.com/SubhakarKotta/k8s-vagrant-centos.git) 
 * `$ cd k8s-vagrant-centos/provisioning` 
@@ -62,11 +62,11 @@ By running the below command kubernetes cluster will be created with 2 Centos VM
 
 
 <a id="addons"></a>
-## What are the addons provided ?
+# What are the addons provided ?
 [***helm***](https://helm.sh/docs/install/) /  [***kubernetes-dashboard***](https://github.com/helm/charts/tree/master/stable/kubernetes-dashboard) / [***nfs-volume-provisioner***](https://github.com/helm/charts/tree/master/stable/nfs-client-provisioner)
 
 <a id="configuration"></a>
-## What are the VM's configured ?
+# What are the VM's configured ?
 By default below are the IP Addresses that will be configured for the VM's
 
 Name|IP|OS|RAM|CPU|
@@ -76,14 +76,14 @@ kworker1 |100.10.10.101|CentOS7|16GB|3|
 
 
 <a id="dashboard"></a>
-## How to access Kubernetes Dashboard ?
+# How to access Kubernetes Dashboard ?
 The ***Kubernetes Dashboard*** can be accessed via the below ***URL*** without any changes from your host machine
 
 [http://100.10.10.100:30070/#!/overview?namespace=_all](http://100.10.10.100:30070/#!/overview?namespace=_all)
 
 
 <a id="access"></a>
-## How to access Vagrant VM's ?
+# How to access Vagrant VM's ?
 
 The Vagrant VM can be accessed in two ways
 
@@ -97,16 +97,16 @@ The Vagrant VM can be accessed in two ways
 
 
 <a id="stop"></a>
-## How to stop Vagrant VM's ?
+# How to stop Vagrant VM's ?
 * `$ cd k8s-vagrant-centos/provisioning`
 * `$ vagrant halt`
 
 <a id="restart"></a>
-## How to restart Vagrant VM's ?
+# How to restart Vagrant VM's ?
 * `$ cd k8s-vagrant-centos/provisioning`
 * `$ vagrant up`
 
 <a id="destroy"></a>
-## How to destroy Vagrant VM's ?
+# How to destroy Vagrant VM's ?
 * `$ cd k8s-vagrant-centos/provisioning`
 * `$ vagrant destroy`
