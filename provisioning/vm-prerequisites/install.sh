@@ -73,7 +73,9 @@ yum -y install nfs-utils
 systemctl enable nfs-server.service
 systemctl start nfs-server.service
 mkdir /mnt/storage
+chmod 777 -R /mnt
 cat >>/etc/exports<<EOF
 /mnt/storage *(rw,sync,no_root_squash,no_subtree_check)
 EOF
 exportfs -a
+
