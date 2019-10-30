@@ -53,7 +53,7 @@ gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
 EOF
 
 echo "[TASK 9] Install kubeadm, kubelet and kubectl"
-yum install -y -q kubeadm kubelet kubectl >/dev/null 2>&1
+yum install -y -q kubeadm-1.15.3 kubelet-1.15.3 kubectl-1.15.3 >/dev/null 2>&1
 
 echo "[TASK 10] Enable and Start Kubelet Service"
 systemctl enable kubelet >/dev/null 2>&1
